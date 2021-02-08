@@ -34,6 +34,7 @@ while True:
       try: urllib.request.urlopen(req, timeout=10)
       except urllib.error.URLError as e:
           print(e.reason)
+          pass
       time.sleep(5)
     print("Uahh tired ...going to sleep for ", timesleep, " hour(s)")
     time.sleep(timesleep*3600)
